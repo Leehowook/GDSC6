@@ -20,7 +20,7 @@ class page4 : AppCompatActivity() {
 
         mBinding!!.page4AgreeBt.setOnClickListener(){
             if (binding.page4Textview.getText().toString()=="991209"){
-                val intent = Intent(this, page3::class.java)
+                val intent = Intent(this, mainPage::class.java)
                 startActivity(intent)
             }
         }

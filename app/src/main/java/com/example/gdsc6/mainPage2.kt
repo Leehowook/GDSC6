@@ -43,7 +43,7 @@ class mainPage2 : AppCompatActivity() {
                 MyApplication.prefs.setString("id", id)
                 MyApplication.prefs.setString("pw", pw)
 
-                val intent = Intent(this, mainPage3::class.java)
+                val intent = Intent(this, page2::class.java)
                 startActivity(intent)
             }
         }
