@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.concurrent.thread
 
-class page3 : AppCompatActivity() {
+class page3 : LockAppCompatActivity() {
 
     var total = 0 // 전체 시간을 저장
     var started = false // 시작 되었는지 체크를 위한 변수
@@ -43,13 +43,15 @@ class page3 : AppCompatActivity() {
                         started=false // started 값 false로 변경
                         Toast.makeText(this, "10초 지나면 넘어가는거였습니다~", Toast.LENGTH_SHORT).show()
                         ringtone.stop()
-
+                        isClear = true
+                        val intent = Intent(this,page5::class.java)
+                        startActivity(intent)
                     }
                 }
             }
         }
-        val intent = Intent(this,page5::class.java)
-        startActivity(intent)
+
+
     }
 
 

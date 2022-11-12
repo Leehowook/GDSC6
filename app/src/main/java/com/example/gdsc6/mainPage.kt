@@ -36,6 +36,7 @@ class mainPage : LockAppCompatActivity() {
             val id = MyApplication.prefs.getString("id","")
             val password = MyApplication.prefs.getString("pw","")
             if(loginid==id && loginpassward==password){
+                isClear = true
                 val intent2 = Intent(this, page5::class.java)
                 startActivity(intent2)
             }
