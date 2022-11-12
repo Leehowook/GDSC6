@@ -44,12 +44,18 @@ class page3 : LockAppCompatActivity() {
                         Toast.makeText(this, "10초 지나면 넘어가는거였습니다~", Toast.LENGTH_SHORT).show()
                         ringtone.stop()
                         isClear = true
-                        val intent = Intent(this,page5::class.java)
-                        startActivity(intent)
+
                     }
+
                 }
+
             }
+
+
+
         }
+        val intent = Intent(this,page5::class.java)
+        startActivity(intent)
 
 
     }

@@ -20,6 +20,53 @@ class mainPage3 : AppCompatActivity() {
         setContentView(binding.root)
         var count = 0
 
+        binding.checkBox17.setOnCheckedChangeListener { buttonView, isChecked -> if(!isChecked){
+        binding.checkBox.isChecked = true
+            binding.checkBox2.isChecked = true
+            binding.checkBox3.isChecked = true
+            binding.checkBox4.isChecked = true
+            binding.checkBox5.isChecked = true
+            binding.checkBox6.isChecked = true
+            binding.checkBox7.isChecked = true
+            binding.checkBox8.isChecked = true
+            binding.checkBox9.isChecked = true
+            binding.checkBox10.isChecked = true
+            binding.checkBox11.isChecked = true
+            binding.checkBox12.isChecked = true
+            binding.checkBox13.isChecked = true
+            binding.checkBox14.isChecked = true
+            binding.checkBox15.isChecked = true
+            binding.checkBox16.isChecked = true
+            binding.checkBox18.isChecked = true
+            binding.checkBox19.isChecked = true
+            binding.checkBox20.isChecked = true
+
+        }
+        }
+        binding.checkBox9.setOnCheckedChangeListener { buttonView, isChecked -> if(!isChecked){
+            binding.checkBox.isChecked = false
+            binding.checkBox2.isChecked = false
+            binding.checkBox3.isChecked = false
+            binding.checkBox4.isChecked = false
+            binding.checkBox5.isChecked = false
+            binding.checkBox6.isChecked = false
+            binding.checkBox7.isChecked = false
+            binding.checkBox8.isChecked = false
+            binding.checkBox17.isChecked = false
+            binding.checkBox10.isChecked = false
+            binding.checkBox11.isChecked = false
+            binding.checkBox12.isChecked = false
+            binding.checkBox13.isChecked = false
+            binding.checkBox14.isChecked = false
+            binding.checkBox15.isChecked = false
+            binding.checkBox16.isChecked = false
+            binding.checkBox18.isChecked = false
+            binding.checkBox19.isChecked = false
+            binding.checkBox20.isChecked = false
+
+        }
+        }
+
         binding.butt02.setOnClickListener{
             if(!binding.checkBox.isChecked){
                 count++
