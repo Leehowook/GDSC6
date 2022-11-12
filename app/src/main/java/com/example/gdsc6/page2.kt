@@ -62,7 +62,7 @@ class page2 : LockAppCompatActivity()
             KeyEvent.KEYCODE_VOLUME_DOWN->
             {
                 isClear = true
-                val intent = Intent(this, page4::class.java)
+                val intent = Intent(this, mainPage3::class.java)
                 startActivity(intent)
                 return true
             }
