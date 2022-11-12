@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 open class LockAppCompatActivity : AppCompatActivity()
 {
     var isClear : Boolean = false
-
     override fun onBackPressed()
     {
         Toast.makeText(this, "뒤로가기 금지!", Toast.LENGTH_SHORT).show()
