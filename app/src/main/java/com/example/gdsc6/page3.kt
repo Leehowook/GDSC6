@@ -43,7 +43,7 @@ class page3 : AppCompatActivity() {
                         started=false // started 값 false로 변경
                         Toast.makeText(this, "10초 지나면 넘어가는거였습니다~", Toast.LENGTH_SHORT).show()
                         ringtone.stop()
-                        val intent = Intent(this, page4::class.java)
+                        val intent = Intent(this,page5::class.java)
                         startActivity(intent)
                     }
                 }

@@ -19,13 +19,11 @@ class page4 : AppCompatActivity() {
         setContentView(binding.root)
 
         mBinding!!.page4AgreeBt.setOnClickListener(){
-            val intent = Intent(this, page3::class.java)
-            startActivity(intent)
+            if (binding.page4Textview.getText().toString()=="991209"){
+                val intent = Intent(this, page3::class.java)
+                startActivity(intent)
+            }
         }
 
-        mBinding!!.page4RealAgreeBt.setOnClickListener(){
-            val intent = Intent(this, page5::class.java)
-            startActivity(intent)
-        }
     }
 }

@@ -27,6 +27,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".page3" />
         <activity android:name=".page4" />
+        <activity android:name=".page5" />
         <activity
             android:name=".page2"
             android:exported="true">
