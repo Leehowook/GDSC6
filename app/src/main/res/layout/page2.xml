@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/Wallpaper_008"
+        android:background="@drawable/wallpaper_008"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
@@ -29,9 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Play_stores"
-        app:layout_constraintBottom_toBottomOf=""
-
-        app:srcCompat="@drawable/Youtube" />
+        app:srcCompat="@drawable/youtube" />
 
 
     <ImageButton
@@ -47,7 +45,7 @@
         app:layout_constraintStart_toEndOf="@+id/Youtube"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:srcCompat="@drawable/playStore" />
+        app:srcCompat="@drawable/playstore" />
 
     <ImageButton
         android:id="@+id/chrome"
