@@ -38,10 +38,17 @@ class mainPage2 : AppCompatActivity() {
         })
         binding.next.setOnClickListener(){
             if(binding.password.getText().toString().equals(binding.passwordcon.getText().toString())){
+                val id = binding.editTextTextEmailAddress3.text.toString()
+                val pw = binding.password.text.toString()
+
+                MyApplication.prefs.setString("id", id)
+                MyApplication.prefs.setString("pw", pw)
+
                 val intent = Intent(this, mainPage3::class.java)
                 startActivity(intent)
             }
         }
+
 
     }
 

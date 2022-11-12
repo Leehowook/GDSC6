@@ -27,6 +27,18 @@ class mainPage : AppCompatActivity() {
         binding.signup.setOnClickListener {
             val intent = Intent(this, mainPage2::class.java)
             startActivity(intent)
+
+        }
+        binding.button.setOnClickListener{
+            val loginid = binding.editTextTextEmailAddress.text.toString()
+            val loginpassward = binding.editTextTextPassword.text.toString()
+
+            val id = MyApplication.prefs.getString("id","")
+            val password = MyApplication.prefs.getString("pw","")
+            if(loginid==id && loginpassward==password){
+                val intent2 = Intent(this, page5::class.java)
+                startActivity(intent2)
+            }
         }
 
 
