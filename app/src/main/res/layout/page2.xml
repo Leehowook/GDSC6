@@ -1,6 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context = ".page2"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Wallpaper_008"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/Youtube"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/shape_for_circle_button"
+        android:contentDescription="@string/change"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Play_stores"
+        app:layout_constraintBottom_toBottomOf=""
+
+        app:srcCompat="@drawable/Youtube" />
+
+
+    <ImageButton
+        android:id="@+id/Play_stores"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+
+        android:background="#00000000"
+        android:contentDescription="@string/change"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/chrome"
+        app:layout_constraintStart_toEndOf="@+id/Youtube"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/playStore" />
+
+    <ImageButton
+        android:id="@+id/chrome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintEnd_toStartOf="@+id/us"
+        app:layout_constraintStart_toEndOf="@+id/Play_stores"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chrome" />
+
+    <ImageButton
+        android:id="@+id/us"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+
+        app:layout_constraintStart_toEndOf="@+id/chrome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/us" />
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.398"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/homeButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.398"
+
+        app:layout_constraintStart_toEndOf="@id/menuButton"
+        app:layout_constraintEnd_toStartOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/youtubeText"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="@string/youtube"
+        android:textSize="5pt"
+        app:layout_constraintTop_toBottomOf="@+id/Youtube"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Youtube"
+        app:layout_constraintRight_toRightOf="@id/Youtube"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:id="@+id/chromeText"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="@string/chrome"
+        android:textSize="5pt"
+        app:layout_constraintTop_toBottomOf="@+id/chrome"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/chrome"
+        app:layout_constraintRight_toRightOf="@id/chrome"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:id="@+id/playText"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="@string/play"
+        android:textSize="4pt"
+        app:layout_constraintTop_toBottomOf="@+id/Play_stores"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Play_stores"
+        app:layout_constraintRight_toRightOf="@id/Play_stores"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:id="@+id/EXITText"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textSize="5pt"
+        app:layout_constraintTop_toBottomOf="@+id/us"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/us"
+        app:layout_constraintRight_toRightOf="@id/us"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
