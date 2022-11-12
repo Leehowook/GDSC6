@@ -5,12 +5,13 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gdsc6.databinding.MainPage2Binding
 import com.example.gdsc6.databinding.MainPageBinding
 
-class mainPage2 : AppCompatActivity() {
+class mainPage2 : LockAppCompatActivity() {
     private var mBinding: MainPage2Binding? = null
     private val binding get() = mBinding!!
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,11 +44,14 @@ class mainPage2 : AppCompatActivity() {
                 MyApplication.prefs.setString("id", id)
                 MyApplication.prefs.setString("pw", pw)
 
+                isClear = true
                 val intent = Intent(this, page2::class.java)
                 startActivity(intent)
+                finish()
             }
         }
 
 
     }
+
 }
