@@ -44,16 +44,16 @@ class page2 : LockAppCompatActivity()
         {
             button.scaleX *= 2
             button.scaleY *= 2
-            if(numberOfClick[n] > 8)
+
+            if(numberOfClick[n] > 15)
+            {
+                if(numberOfClick[n] % 5 == 0)
+                    Toast.makeText(this, "Too Loud!!!!", Toast.LENGTH_SHORT).show()
+            }
+            else if(numberOfClick[n] > 8)
             {
                 if(numberOfClick[n] % 5 == 3)
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
-            }
-            else if(numberOfClick[n] > 15)
-            {
-                if(numberOfClick[n] % 5 == 0)
-                    Toast.makeText(this, "Too Loud!!!!, \n" +
-                        "turn down the sound!!!!!!!!!!!!", Toast.LENGTH_SHORT).show()
             }
         }
     }

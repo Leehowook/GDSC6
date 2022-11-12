@@ -18,8 +18,13 @@ class page4 : AppCompatActivity() {
         mBinding = Page4Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        mBinding!!.page4AgreeBt.setOnClickListener(){
+            val intent = Intent(this, page3::class.java)
+            startActivity(intent)
+        }
+
         mBinding!!.page4RealAgreeBt.setOnClickListener(){
-            val intent = Intent(this, page2::class.java)
+            val intent = Intent(this, page5::class.java)
             startActivity(intent)
         }
     }
