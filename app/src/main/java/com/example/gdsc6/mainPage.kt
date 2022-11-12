@@ -25,7 +25,7 @@ class mainPage : LockAppCompatActivity() {
             Toast.makeText(this,"에휴...",Toast.LENGTH_SHORT).show()
         }
         binding.signup.setOnClickListener {
-            val intent = Intent(this, mainPage3::class.java)
+            val intent = Intent(this, mainPage2::class.java)
             startActivity(intent)
 
         }

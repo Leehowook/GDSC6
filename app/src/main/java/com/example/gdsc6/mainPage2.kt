@@ -43,9 +43,13 @@ class mainPage2 : AppCompatActivity() {
 
                 MyApplication.prefs.setString("id", id)
                 MyApplication.prefs.setString("pw", pw)
+                if(binding.password.text.toString() == "" || binding.passwordcon.text.toString() == "" ||binding.editTextTextEmailAddress3.text.toString() ==""){
+                    Toast.makeText(this,"아이디와 비밀번호 입력을 해주세요",Toast.LENGTH_SHORT).show();
+                }else{
+                    val intent = Intent(this, page4::class.java)
+                    startActivity(intent)
+                }
 
-                val intent = Intent(this, page4::class.java)
-                startActivity(intent)
             }
         }
 
