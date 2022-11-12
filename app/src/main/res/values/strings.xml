@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">GDSC6</string>
-    <string name="todo" />
-    <string name="change" />
     <string name="youtube">Youtube</string>
     <string name="chrome">chrome</string>
     <string name="play">play 스토어</string>
     <string name="us">us</string>
     <string name="exit">EXIT</string>
+    <string name="chromeicon">chromeIcon</string>
+    <string name="usicon">usIcon</string>
+    <string name="menuicon">menuIcon</string>
+    <string name="homeicon">homeIcon</string>
+    <string name="backicon">backIcon</string>
+    <string name="backImg">backgroundImg</string>
+    <string name="youtubeicon">youtubeIcon</string>
+    <string name="playstoreicon">playStoreIcon</string>
 </resources>

@@ -17,6 +17,9 @@ class mainPage2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = MainPage2Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        var pass = binding.password.toString()
+        var passco = binding.passwordcon.toString()
+
         binding.passwordcon.addTextChangedListener(object : TextWatcher {
             // EditText에 문자 입력 전
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
@@ -25,23 +28,19 @@ class mainPage2 : AppCompatActivity() {
 
             // EditText 입력이 끝난 후
             override fun afterTextChanged(p0: Editable?) {
-                if(binding.password.getText().toString().equals(binding.passwordcon.getText().toString())) {
-                    binding.eq.setText("비밀번호가 일치합니다.")
+                if(binding.password.getText().toString().equals(binding.passwordcon.getText().toString())){
+                    binding.eq.setText("일치합니다.")
                 }
                 else
-                    binding.eq.setText("비밀번호가 일치하지 않습니다.")
+                    binding.eq.setText("일치하지 않습니다.")
             }
         })
         binding.next.setOnClickListener(){
             if(binding.password.getText().toString().equals(binding.passwordcon.getText().toString())){
-                val intent = Intent(this, page3::class.java)
+                val intent = Intent(this, mainPage3::class.java)
                 startActivity(intent)
             }
         }
-
-
-
-
 
     }
 }
