@@ -17,13 +17,9 @@ class mainPage2 : AppCompatActivity() {
         var pass = binding.password.toString()
         var passco = binding.passwordcon.toString()
 
-
-
         if(pass != passco){
             Toast.makeText(this,"비밀먼호가 다릅니다 확인해주세요!",Toast.LENGTH_SHORT).show()
         }
-
-
 
     }
 }
