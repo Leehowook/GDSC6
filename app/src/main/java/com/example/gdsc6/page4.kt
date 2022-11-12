@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gdsc6.databinding.Page4Binding
 
-class page4 : AppCompatActivity() {
+class page4 : LockAppCompatActivity() {
 
     //이거 두줄이랑
     private var mBinding: Page4Binding? = null
@@ -18,8 +18,13 @@ class page4 : AppCompatActivity() {
         mBinding = Page4Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        mBinding!!.page4AgreeBt.setOnClickListener(){
+            val intent = Intent(this, page3::class.java)
+            startActivity(intent)
+        }
+
         mBinding!!.page4RealAgreeBt.setOnClickListener(){
-            val intent = Intent(this, page2::class.java)
+            val intent = Intent(this, page5::class.java)
             startActivity(intent)
         }
     }
