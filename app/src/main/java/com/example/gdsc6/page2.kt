@@ -16,13 +16,12 @@ import androidx.appcompat.widget.LinearLayoutCompat
 class page2 : LockAppCompatActivity()
 {
     var numberOfClick = arrayOf<Int>(0,0,0,0)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.page2)
 
         val button : Array<ImageButton> = arrayOf(findViewById(R.id.Youtube), findViewById(R.id.us),
-            findViewById(R.id.Play_stores), findViewById(R.id.chrome),)
+            findViewById(R.id.Play_stores), findViewById(R.id.chrome))
         val textButton : Array<TextView> = arrayOf(findViewById(R.id.youtubeText), findViewById(R.id.EXITText),
             findViewById(R.id.playText), findViewById(R.id.chromeText))
 
