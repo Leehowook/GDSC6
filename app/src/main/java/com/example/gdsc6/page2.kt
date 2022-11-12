@@ -9,7 +9,7 @@ class page2 : LockAppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.page2)
-
     }
+    
 
 }
