@@ -4,6 +4,7 @@
     package="com.example.gdsc6">
 
     <uses-permission android:name="android.permission.REORDER_TASKS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,11 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GDSC6"
         tools:targetApi="31">
-        <activity android:name=".mainPage2"></activity>
-        <activity android:name=".LockAppCompatActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".page3"></activity>
-        <activity android:name=".page4"></activity>
+        <activity
+            android:name=".mainPage3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".mainPage2" />
+        <activity android:name=".LockAppCompatActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".page3" />
+        <activity android:name=".page4" />
         <activity
             android:name=".mainPage"
             android:exported="true">

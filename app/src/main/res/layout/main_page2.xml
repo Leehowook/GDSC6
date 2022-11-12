@@ -2,17 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/next"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0081CF">
 
     <TextView
-        android:id="@+id/Dae"
+        android:id="@+id/eq"
         android:layout_width="359dp"
         android:layout_height="40dp"
         android:layout_marginBottom="230dp"
-        android:text="비밀번호에 대문자를 1개 이상 넣어주세요"
+        android:text="비밀번호가 일치하지 않습니다."
         android:textColor="#575353"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
