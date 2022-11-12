@@ -77,7 +77,7 @@
         android:layout_height="45dp"
         android:text="동의하기"
         android:background="#00ff0000"
-        android:textColor="#017DC8"
+        android:textColor="#027AC3"
         app:layout_constraintTop_toBottomOf="@id/page4_agree_bt"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp"
