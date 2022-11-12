@@ -1,4 +1,22 @@
 package com.example.gdsc6
 
-class page4 {
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.gdsc6.databinding.Page4Binding
+
+class page4 : AppCompatActivity() {
+
+    //이거 두줄이랑
+    private var mBinding: Page4Binding? = null
+    private val binding get() = mBinding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        //이거 두줄 해야 바인딩됨
+        mBinding = Page4Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+    }
 }
