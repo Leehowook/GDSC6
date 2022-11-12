@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.gdsc6.databinding.MainPageBinding
 
 
-class mainPage : AppCompatActivity() {
+class mainPage : LockAppCompatActivity() {
     private var mBinding: MainPageBinding? = null
     private val binding get() = mBinding!!
 
@@ -36,6 +36,7 @@ class mainPage : AppCompatActivity() {
             val id = MyApplication.prefs.getString("id","")
             val password = MyApplication.prefs.getString("pw","")
             if(loginid==id && loginpassward==password){
+                isClear = true
                 val intent2 = Intent(this, page5::class.java)
                 startActivity(intent2)
             }

@@ -9,10 +9,9 @@ import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.LinearLayoutCompat
 
-
-@Suppress("DEPRECATION")
 class page2 : LockAppCompatActivity()
 {
     var numberOfClick = arrayOf<Int>(0,0,0,0)
@@ -62,6 +61,7 @@ class page2 : LockAppCompatActivity()
         {
             KeyEvent.KEYCODE_VOLUME_DOWN->
             {
+                isClear = true
                 val intent = Intent(this, page4::class.java)
                 startActivity(intent)
                 return true

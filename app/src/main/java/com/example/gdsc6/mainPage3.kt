@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.example.gdsc6.databinding.ActivityMainPage3Binding
 import com.example.gdsc6.databinding.MainPage2Binding
 
-class mainPage3 : AppCompatActivity() {
+class mainPage3 : LockAppCompatActivity() {
     private var mBinding: ActivityMainPage3Binding? = null
 
     private val binding get() = mBinding!!
