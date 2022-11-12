@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GDSC6</string>
+    <string name="todo" />
+    <string name="change" />
+    <string name="youtube">Youtube</string>
+    <string name="chrome">chrome</string>
+    <string name="play">play 스토어</string>
+    <string name="us">us</string>
+    <string name="exit">EXIT</string>
 </resources>
