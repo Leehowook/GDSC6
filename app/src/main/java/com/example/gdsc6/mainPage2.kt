@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gdsc6.databinding.MainPage2Binding
@@ -43,4 +44,5 @@ class mainPage2 : AppCompatActivity() {
         }
 
     }
+
 }
