@@ -18,52 +18,83 @@ class mainPage3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainPage3Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        var count = 20
+        var count = 0
 
-
-
-
-        /*val checkArray : Array<CheckBox> = arrayOf(binding.checkBox,binding.checkBox2,binding.checkBox3,
-            binding.checkBox4,binding.checkBox5,binding.checkBox6,binding.checkBox7,binding.checkBox8,
-            binding.checkBox9,binding.checkBox10,binding.checkBox11,binding.checkBox12,binding.checkBox13,
-            binding.checkBox14,binding.checkBox15,binding.checkBox16,binding.checkBox17,binding.checkBox18,
-            binding.checkBox19,binding.checkBox20)
-
-        val Listner = CompoundButton.OnCheckedChangeListener{buttonView, isChecked ->
-            if(isChild)
-            {
+        binding.butt02.setOnClickListener{
+            if(!binding.checkBox.isChecked){
                 count++
             }
-            else{}
-        }
-
-        for(i in checkArray)
-        {
-            i.setOnCheckedChangeListener(Listner)
-        }
-
-        binding.nextSet.setOnClickListener(){
-            if(count == 3){
+            if(!binding.checkBox2.isChecked){
+                count++
+            }
+            if(!binding.checkBox3.isChecked){
+                count++
+            }
+            if(!binding.checkBox4.isChecked){
+                count++
+            }
+            if(!binding.checkBox5.isChecked){
+                count++
+            }
+            if(!binding.checkBox6.isChecked){
+                count++
+            }
+            if(!binding.checkBox7.isChecked){
+                count++
+            }
+            if(!binding.checkBox8.isChecked){
+                count++
+            }
+            if(!binding.checkBox9.isChecked){
+                count++
+            }
+            if(!binding.checkBox10.isChecked){
+                count++
+            }
+            if(!binding.checkBox11.isChecked){
+                count++
+            }
+            if(!binding.checkBox12.isChecked){
+                count++
+            }
+            if(!binding.checkBox13.isChecked){
+                count++
+            }
+            if(!binding.checkBox14.isChecked){
+                count++
+            }
+            if(!binding.checkBox15.isChecked){
+                count++
+            }
+            if(!binding.checkBox16.isChecked){
+                count++
+            }
+            if(!binding.checkBox17.isChecked){
+                count++
+            }
+            if(!binding.checkBox18.isChecked){
+                count++
+            }
+            if(!binding.checkBox19.isChecked){
+                count++
+            }
+            if(!binding.checkBox20.isChecked){
+                count++
+            }
+            if(count == 17){
                 val intent = Intent(this, page4::class.java)
                 startActivity(intent)
             }
-        }
-    }
-    private fun checkOnOff(checkBox: CheckBox)
-    {
-        if(checkBox.isChecked)
-        {
-            checkBox.isChecked = false
-            count++
-        }
-        else
-        {
-            checkBox.isChecked = true
+            else{
+                Toast.makeText(this,"3개를 선택해주세요",Toast.LENGTH_SHORT).show()
+            }
+
+            count = 0
+
+
+
         }
 
-        if(count == 17)
-        {
-            isClear = true
-        }*/
+
     }
 }

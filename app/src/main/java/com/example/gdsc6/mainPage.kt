@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.gdsc6.databinding.MainPageBinding
 
 
-class mainPage : AppCompatActivity() {
+class mainPage : LockAppCompatActivity() {
     private var mBinding: MainPageBinding? = null
     private val binding get() = mBinding!!
 
@@ -25,7 +25,7 @@ class mainPage : AppCompatActivity() {
             Toast.makeText(this,"에휴...",Toast.LENGTH_SHORT).show()
         }
         binding.signup.setOnClickListener {
-            val intent = Intent(this, mainPage2::class.java)
+            val intent = Intent(this, mainPage3::class.java)
             startActivity(intent)
 
         }

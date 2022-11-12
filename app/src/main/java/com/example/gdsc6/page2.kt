@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.LinearLayoutCompat
 
 
-@Suppress("DEPRECATION")
+
 class page2 : LockAppCompatActivity()
 {
     var numberOfClick = arrayOf<Int>(0,0,0,0)
